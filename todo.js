@@ -1,6 +1,7 @@
 // Attrape l'input, le bouton, et la liste
 const input = document.getElementById('todo-input');
 const button = document.getElementById('add-btn');
+const buttonRemove = document.getElementById('remove');
 const list = document.getElementById('todo-list');
 
 
@@ -17,4 +18,15 @@ button.addEventListener('click', function() {
 
   // Étape 4 : vider l’input pour la prochaine tâche
   input.value = '';
+});
+
+
+// ----------------------------------------------------
+
+
+
+buttonRemove.addEventListener('click', function() {
+  if (list.firstElementChild !== null) {
+    list.removeChild(list.firstElementChild);
+  }
 });
