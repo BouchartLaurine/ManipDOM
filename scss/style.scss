@@ -3,13 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+// Caroussel ↓
 .carousel {
   height: 100vh;
   width: 50vw;
   position: relative;
-}
-.carousel button {
+button {
   position: absolute;
   background: none;
   border: none;
@@ -21,30 +20,33 @@
   transform: translateY(-50%);
   top: 50%;
 }
-.carousel #prev {
+#prev {
   left: 5px;
 }
-.carousel #next {
+#next {
   right: 5px;
 }
-.carousel li {
+li {
   list-style: none;
 }
-.carousel .slide {
+.slide {
   position: absolute;
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: 0.4s ease-in-out;
 }
-.carousel .slide.active {
+.slide.active {
   opacity: 1;
 }
-.carousel .slide img {
+
+.slide img {
   display: block;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
-/*# sourceMappingURL=style.css.map */
+}
+
+@import url(/scss/todo.scss);

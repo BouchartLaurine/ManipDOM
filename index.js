@@ -16,3 +16,4 @@ buttons.forEach((button) => {    // Ajout d'un écouteur d'événement pour chaq
     slideActive.classList.remove("active");
   });
 });
+ 
