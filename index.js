@@ -1,13 +1,13 @@
 const main =document.getElementById('main')
 const header = document.getElementById('header')
 
-header.innerHTML = `    <nav>
+header.innerHTML = `<nav>
       <ul>
-        <li><a href="index.html">Caroussel</a></li>
+      <li><a href="index.html">Caroussel</a></li>
         <li><a href="todolist.html">Todo List</a></li>
         <li><a href="score.html">Score Keeper</a></li>
       </ul>
-    </nav> ;`
+    </nav> `
 
 
 

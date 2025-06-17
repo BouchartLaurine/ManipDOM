@@ -17,33 +17,38 @@ header.innerHTML = `  <nav>
     
 
 // Player 1 ↓
-player1.addEventListener('click', function() {
-let currentScore1 = Number(score1.textContent);
-score1.textContent = currentScore1 + 1;
-if (Number(score1.textContent) === Number(input.value)) {
-  player1.disabled = true;
-  player2.disabled = true;
-}
- });
+player1.addEventListener('click', function () {
+  let currentScore1 = Number(score1.textContent);
+  score1.textContent = currentScore1 + 1;
+  if (Number(score1.textContent) === Number(input.value)) {
+    player1.disabled = true;
+    player2.disabled = true;
+    score1.classList.add('winner');
+    score2.classList.add('loser');
+  }
+});
 
+// Player 2 ↓
+player2.addEventListener('click', function () {
+  let currentScore2 = Number(score2.textContent);
+  score2.textContent = currentScore2 + 1;
+  if (Number(score2.textContent) === Number(input.value)) {
+    player1.disabled = true;
+    player2.disabled = true;
+    score2.classList.add('winner');
+    score1.classList.add('loser');
+  }
+});
 
-//  Player 2 ↓
-player2.addEventListener('click', function() {
-let currentScore2 = Number(score2.textContent);
-score2.textContent = currentScore2 + 1;
-
-if (Number(score2.textContent) === Number(input.value)) {
-  player1.disabled = true;
-  player2.disabled = true;
-}
-  
- });
 
 
 //  Reset ↓
-reset.addEventListener('click', function() {
+reset.addEventListener('click', function () {
   score1.textContent = 0;
   score2.textContent = 0;
   player1.disabled = false;
   player2.disabled = false;
+  score1.classList.remove('winner', 'loser');
+  score2.classList.remove('winner', 'loser');
 });
+

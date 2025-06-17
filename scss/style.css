@@ -76,4 +76,14 @@ body {
 header {
   background-color: #A2AADB;
 }
+
+.winner {
+  color: green;
+  font-weight: bold;
+}
+
+.loser {
+  color: red;
+  opacity: 0.6;
+}
 /*# sourceMappingURL=style.css.map */

@@ -86,3 +86,15 @@ body{
 header {
   background-color: #A2AADB;
 }
+
+// TodoList ↓ 
+
+.winner {
+  color: green;
+  font-weight: bold;
+}
+
+.loser {
+  color: red;
+  opacity: 0.6;
+}
