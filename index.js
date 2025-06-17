@@ -1,3 +1,35 @@
+const main =document.getElementById('main')
+const header = document.getElementById('header')
+
+header.innerHTML = `    <nav>
+      <ul>
+        <li><a href="index.html">Caroussel</a></li>
+        <li><a href="todolist.html">Todo List</a></li>
+        <li><a href="score.html">Score Keeper</a></li>
+      </ul>
+    </nav> ;`
+
+
+
+
+main.innerHTML = `
+    <div class="carousel">
+      <button class="btn" id="prev">Précédent</button>
+      <button class="btn" id="next">Suivant</button>
+      <ul>
+        <li class="slide">
+          <img src="./img/0.png" alt="image carousel">
+        </li>
+        <li class="slide active">
+          <img src="./img/1.png" alt="image carousel">
+        </li>
+        <li class="slide">
+          <img src="./img/2.png" alt="image carousel">
+        </li>
+      </ul>
+    </div>`;
+
+
 const buttons = document.querySelectorAll(".btn");  // On sélectionne tous les boutons Précédent et Suivant
 const slides = document.querySelectorAll(".slide"); // On sélectionne toutes les images
 
@@ -18,6 +50,10 @@ buttons.forEach((button) => {
     slides[newIndex].classList.add("active");         // Ajoute la classe active à la nouvelle
   });
 });
+
+
+
+
 
 
 

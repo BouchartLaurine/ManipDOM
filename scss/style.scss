@@ -49,4 +49,24 @@ li {
 }
 }
 
-@import url(/scss/todo.scss);
+
+
+
+
+//-------------------- Nav ↓ ----------------------------------------------
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+  li {
+    list-style-type: none; 
+  }
+  a {
+    text-decoration: none;
+    color: #C0C9EE;
+  }
+}
+

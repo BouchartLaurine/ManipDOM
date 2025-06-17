@@ -4,6 +4,17 @@ const reset = document.getElementById('reset');
 const score1 = document.getElementById('score1');
 const score2 = document.getElementById('score2');
 const input = document.getElementById('input');
+const header = document.getElementById('header')
+
+header.innerHTML = `  <nav>
+      <ul>
+        <li><a href="index.html">Caroussel</a></li>
+        <li><a href="todolist.html">Todo List</a></li>
+        <li><a href="score.html">Score Keeper</a></li>
+      </ul>
+    </nav>`;
+
+    
 
 // Player 1 ↓
 player1.addEventListener('click', function() {

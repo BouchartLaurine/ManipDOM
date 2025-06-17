@@ -3,6 +3,15 @@ const input = document.getElementById('todo-input');
 const button = document.getElementById('add-btn');
 const buttonRemove = document.getElementById('remove');
 const list = document.getElementById('todo-list');
+constheader = document.getElementById('header');
+
+header.innerHTML = ` <nav>
+      <ul>
+        <li><a href="index.html">Caroussel</a></li>
+        <li><a href="todolist.html">Todo List</a></li>
+        <li><a href="score.html">Score Keeper</a></li>
+      </ul>
+    </nav>`;
 
 
 button.addEventListener('click', function() {
