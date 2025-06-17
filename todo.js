@@ -3,7 +3,9 @@ const input = document.getElementById('todo-input');
 const button = document.getElementById('add-btn');
 const buttonRemove = document.getElementById('remove');
 const list = document.getElementById('todo-list');
-constheader = document.getElementById('header');
+const header = document.getElementById('header');
+
+// InnerHTML  --- ↓
 
 header.innerHTML = ` <nav>
       <ul>
@@ -14,6 +16,8 @@ header.innerHTML = ` <nav>
     </nav>`;
 
 
+
+    // Add Button --- ↓
 button.addEventListener('click', function() {
 
   // Étape 1 : créer un <li>
@@ -32,7 +36,7 @@ button.addEventListener('click', function() {
 
 // ----------------------------------------------------
 
-
+// Remove Button --- ↓
 
 buttonRemove.addEventListener('click', function() {
   if (list.firstElementChild !== null) {

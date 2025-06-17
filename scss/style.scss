@@ -60,19 +60,29 @@ nav ul {
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 5%;
   li {
     list-style-type: none; 
+     margin-top: 1%;
   }
   a {
     text-decoration: none;
-    color: #C0C9EE;
+    color: #FFF2E0;
+   
   }
 
 }
 
 
 main {
- display: flex;
- justify-content: center;
+ margin-left: 25%;
+ margin-top: 1%;
+}
+
+
+body{
+  background-color: #C0C9EE;
+}
+
+header {
+  background-color: #A2AADB;
 }
